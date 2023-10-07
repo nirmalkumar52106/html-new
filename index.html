@@ -1,0 +1,307 @@
+<html>
+    <head>
+        <title>home</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Assistant:wght@200;300;400;500;600;700;800&family=Bacasime+Antique&family=Beau+Rivage&family=Borel&family=Caprasimo&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Grape+Nuts&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Montserrat:ital,wght@0,100;1,100;1,400;1,900&family=Noto+Sans+Chorasmian&family=Open+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&family=Rubik+Puddles&family=Satisfy&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <style>
+            @media screen and (max-width:600px){
+                .main-main{display: block!important;padding: 20px;}
+                .main{width: 100%!important;}
+                .main .btn button{
+                    margin: 7px!important;
+                }
+            }
+            @media screen and (max-width:284px){
+                .main .like{display: block!important;}
+                .main .btn button{padding: 10px 13px!important;}
+                .img-section img{width: 60px!important;height: 60px!important;}
+            }
+            @media screen and (min-width:600px){
+                .main{width: 45%!important;}
+            }
+            @media screen and (min-width:1000px){
+                .main{width: 24%!important;}
+            }
+            *{margin: 0;padding: 0;font-family: 'Inconsolata', monospace;}
+            .main{
+                width: 24%;
+                margin: 20px auto;
+                background-color: #cdcdcd;text-align: center;
+                line-height: 37px;border-radius: 14px;
+            }
+            .main .blue{
+                background: blue;border-radius: 14px;
+    height: 139px;
+}
+.main .img-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -91px;
+}
+            
+.main .btn button{
+  padding: 10px 40px;
+    border: none;
+    border-radius: 13px;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  
+}
+.main h1{margin: 10px;}
+.main h3{margin-bottom: 7px;}
+.social-icons i{
+    color: white;
+    background: blue;
+    padding: 16px;
+    border-radius: 25%;
+    font-size: 20px;
+    margin: 10px!important;
+}
+
+.social-icons{margin-bottom: 10px;}
+.like{margin-top: 12px;display: flex;justify-content: center;align-items: center;}
+.like .like-in{padding: 5px;margin: 7px;}
+.like .like-in b{border-right: 2px solid grey;padding-right: 5px;}
+.like-in i{font-size: 22px;}
+.main-main{
+    display: flex;justify-content:center;align-items: center;flex-wrap: wrap;
+}
+        </style>
+<div class="main-main">
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="./images.jpeg" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons ">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ioq4vwF7VrcROmZm3BdTD4hZ9xGSbGmoug&usqp=CAU" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ioq4vwF7VrcROmZm3BdTD4hZ9xGSbGmoug&usqp=CAU" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ioq4vwF7VrcROmZm3BdTD4hZ9xGSbGmoug&usqp=CAU" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ioq4vwF7VrcROmZm3BdTD4hZ9xGSbGmoug&usqp=CAU" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blue"></div>
+        <div class="img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ioq4vwF7VrcROmZm3BdTD4hZ9xGSbGmoug&usqp=CAU" />
+        </div>
+        <h1>Vishnu jangid</h1>
+        <h3>Web developer</h3>
+        <div class="social-icons">
+            <i  class="fa-brands fa-facebook"></i>
+            <i style="background-color:skyblue" class="fa-brands fa-twitter"></i>
+            <i style="background-color: rgba(236, 11, 120, 0.935);" class="fa-brands fa-instagram"></i>
+            <i style="background-color: red;"  class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="btn">
+            <button onclick="Follow()" id="btn">Follow</button>
+            <button>Message</button>
+        </div>
+        
+        <div class="like">
+            <div class="like-in">
+                <i onclick="Like()" id="like"  class="fa-regular fa-heart"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-regular fa-comment"></i>
+               <b> 60.4k</b>
+            </div>
+            <div class="like-in">
+                <i class="fa-solid fa-share"></i>
+               <b> 60.4k</b>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <script>
+            const likedata=document.getElementById("like")
+const followdata=document.getElementById("btn")
+
+            function Like(){
+                likedata.style.color="red"
+               setTimeout(()=>{
+                likedata.style.color=""
+               },2000)
+            }
+
+            function Follow(){
+                followdata.innerHTML="Following"
+                followdata.style.backgroundColor="green"
+            }
+        </script>
+    </body>
+</html>
+
